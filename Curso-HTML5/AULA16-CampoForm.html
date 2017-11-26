@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		
+	<title> Formulários </title>
+	<meta charset="UTF-8">
+	<meta name="description" content="Aprendendo sobre formulários">
+	<meta name="Keywords" content="HTML 5, CSS3">
+	<meta http-equiv="refresh" content="1000000">
+	</head>
+	<body>
+		<form action="cadastro.php" method="POST">
+			<fieldset>
+			    <legend> Informações pessoais </legend>
+				Nome: <br>
+				<input type="text" name="nome" required autofocus maxlength="5"><br>
+				Senha: <br>
+				<input type="password" name="senha" disabled><br>
+				Email: <br>
+				<input type="email" name="email" required><br>
+				Time: <br>
+				<input type="radio" name="time" value="Vasco" checked>Vasco<br>
+				<input type="radio" name="time" value="Bota-Fogo">Bota-Fogo<br>
+				<input type="radio" name="time" value="Fluminense">Fluminense<br>
+				<br>
+				Cores:<br>
+				<input type="checkbox" name="cores" value="verde" checked> Verde <br>
+				<input type="checkbox" name="cores" value="azul"> Azul <br>
+				<input type="checkbox" name="cores" value="preto"> Preto <br>
+				
+				Quantidade: <br> 
+				<input type="number" name="quantidade" min="0" max="500" step="10"><br>
+				
+				Range <br>
+				<input type="range" name="quantidade" step="10"><br>
+				
+				Cor <br>
+				<input type="color" name="cor"> <br>
+				<br/>
+				
+				Imagem <br/>
+				<input type="file" name="imagem"> <br/>
+				
+				
+				URL <br/>
+				<input type="url" name="site"> <br/>
+				
+				Search <br/>
+				<input type="search" name="busca"> <br/>
+				
+				Telefone <br/>
+				<input type="tel" name="telefone"> <br/>
+				
+				
+				Data: <br/>
+				<input type="date" name="data" min="2000-12-31" max="2018-12-10"><br/>
+				
+				Mensagem: <br/>
+				<input type="textarea" name="mensagem" rows="10" cols="30"> <br/>
+				
+				Escolha Seu Veículo: <br/>
+				<select name="veiculo">
+				<optgroup label="carros">
+					
+						<option value="camaro"> Camaro </option>
+						<option value="HILUX"> HILUX </option>
+				</optgroup>	
+				<optgroup label="motos">
+						<option value="POP100" selected> POP100 </option>
+						<option value="ONIX"> ONIX </option>
+					
+				</optgroup>	
+				</select><br/>
+				
+				Escolha um curso: <br/>
+				<input name="cursos" list="lista-cursos">
+					<datalist id="lista-cursos">
+						<option value="HTML5"> 
+						<option value="CSS3">
+						<option value="JAVASCRIPT">	
+						<option value="JAVA">
+					</datalist><br/>
+		
+				<button type="button"> Clique-me </button><br/>
+				<input type="submit" name="btn-enviar" value="Enviar">
+			</fieldset>
+		</form>	
+	</body>
+</html>

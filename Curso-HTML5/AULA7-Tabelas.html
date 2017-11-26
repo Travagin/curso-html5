@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title> Tabelas </title>
+	</head>
+	<style>
+		table, th, td {border: 1px solid #000;}
+		th, td {padding: 7px;}
+		th {color: #ffffff}
+		.nome {background-color: red}
+		.email {background-color: green}
+		.telefone {background-color: blue}
+		.cargo {background-color: yellow}
+	</style>
+	<body>
+		<h1> Tabelas </h1>
+		
+		<table>
+			<caption> CADASTRO DE CLIENTES </caption>
+			
+			<colgroup>
+				<col class="nome">
+				<col class="email">
+				<col class="telefone">
+				<col class="cargo">
+			</colgroup>
+			<thead>
+				<tr>
+					<th> Nome: </th>
+					<th> Email: </th>
+					<th> Telefone: </th>
+					<th> Cargo </th>
+				</tr>
+			</thead>
+			<tbody>
+					<tr>
+						<td> Lucas </td>
+						<td> lucas_travagin1112@hotmail.com </td>
+						<td> (11) 954502967 </td>	
+						<td rowspan="2"> Desenvolvedor WEB </td>	
+					</tr>
+					<tr>
+						<td> Rodrigo </td>
+						<td> rodrigo@hotmail.com </td>
+						<td> (11) 954502967 </td>			
+					</tr>
+					
+					<tr>
+						<td> Julio </td>
+						<td> julio@hotmail.com </td>
+						<td> (11) 954502967 </td>
+						<td rowspan="2"> Analista de Sistemas </td>		
+					</tr>
+					<tr>
+						<td> Paulo </td>
+						<td> paulo@hotmail.com </td>
+						<td> (11) 954502967 </td>			
+					</tr>
+					<tfoot>
+						<tr>
+							<td colspan="4"> Total: 4 </td>
+						</tr>
+					<tfoot>
+			</tbody>
+		</table>
+	</body>
+</html>
